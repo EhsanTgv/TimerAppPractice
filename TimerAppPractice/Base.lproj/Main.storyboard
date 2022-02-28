@@ -26,11 +26,17 @@
                                 <rect key="frame" x="0.0" y="184.5" width="207" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startStopTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vS4-mq-sen"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMt-4r-Ese">
                                 <rect key="frame" x="207" y="184.5" width="207" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Emj-wf-taA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -46,6 +52,11 @@
                             <constraint firstItem="dMt-4r-Ese" firstAttribute="width" secondItem="P26-tm-TaG" secondAttribute="width" id="z6F-5c-9zL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resetButton" destination="dMt-4r-Ese" id="fbt-oU-Bdy"/>
+                        <outlet property="startStopButton" destination="P26-tm-TaG" id="ENf-Xh-sXV"/>
+                        <outlet property="timerLabel" destination="1Y1-Sn-ySg" id="wqJ-CS-4Gk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
